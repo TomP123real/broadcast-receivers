@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Battery Level"
+
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Bluetooth is on"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAir"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="@+id/txtAir"
+        app:layout_constraintTop_toBottomOf="@+id/txtAir" />
+
+    <TextView
+        android:id="@+id/txtAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="AirPlane Mode"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLevel"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/txtLevel"
+        app:layout_constraintTop_toBottomOf="@+id/txtLevel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="BroadCastReceiver"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_b"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLevel"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/txtLevel"
+        app:srcCompat="@drawable/full_battery" />
+
+    <ImageView
+        android:id="@+id/img_a"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_b"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_b"
+        app:layout_constraintTop_toBottomOf="@+id/img_b"
+        app:srcCompat="@drawable/plane_on" />
+
+    <ImageView
+        android:id="@+id/img_blue"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_a"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_a"
+        app:layout_constraintTop_toBottomOf="@+id/img_a"
+        app:srcCompat="@drawable/bluet" />
+
+    <TextView
+        android:id="@+id/txtWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Wifi is on"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBluetooth"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/txtBluetooth"
+        app:layout_constraintTop_toBottomOf="@+id/txtBluetooth" />
+
+    <ImageView
+        android:id="@+id/img_w"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/img_blue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_blue"
+        app:layout_constraintTop_toBottomOf="@+id/img_blue"
+        app:srcCompat="@drawable/wifi_on" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
